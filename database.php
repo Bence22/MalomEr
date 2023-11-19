@@ -1,8 +1,8 @@
 <?php
 
 $host = 'localhost';
-$db_name = $user_name = 'filmdb';
-$password = 'Fyg_W)S.frJm0i6n';
+$db_name = $user_name = 'login';
+$password = 'aaSSdd00';
 
 try {
   $db = new PDO(

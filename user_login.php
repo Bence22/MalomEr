@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   /*
    @var \PDO $db */
   $db = require './database.php';
-  $query = "SELECT * FROM users WHERE email = ?";
+  $query = "SELECT * FROM login WHERE email = ?";
   $stmt = $db->prepare($query);
   $stmt->execute([
     $_POST['email'],

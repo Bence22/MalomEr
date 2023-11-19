@@ -20,7 +20,7 @@ new Swiper(".home", {
   });
 
 
-new Swiper(".coming-container", {
+new Swiper(".photo-container", {
   spaceBetween: 20,
   loop:true,
   autoplay: {

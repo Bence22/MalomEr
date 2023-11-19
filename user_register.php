@@ -13,7 +13,7 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
 }
 
 $query = "
-    INSERT INTO users 
+    INSERT INTO login 
     (name, email, password)
     VALUES(?, ?, ?)";
 
@@ -26,7 +26,7 @@ if (!$stmt) {
 if ($stmt->execute([
   $name,
   $email,
-  $hash
+  $hash,
 ])) {
   header("Location: registration_success.html");
   exit;
